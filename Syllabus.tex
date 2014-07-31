@@ -10,7 +10,7 @@
 \maketitle
 
 \begin{abstract}
-\noindent The objective of this course is to provide students with the basic knowledge economists need when performing numerical and data analysis. Various programs will be reviewed, particularly focusing on computational advantages and time allocation trade-offs when solving typical problems economists face (e.g. numerical integration, likelihood maximization, bootstrap standard errors). The course is entirely practical and based on knowledge from professors, classes, and autodidact training. It must be noted that this is not a theoretical course on convergence properties or alike nor a class on how computer scientists may code economics problems. Instead, the main goal is to provide economists with the essential computational toolkit to conduct research.
+\noindent The objective of this course is to provide students with the basic knowledge economists need when performing economic analysis that is too complicated to solve by hand. Various programs will be reviewed, particularly focusing on computational advantages and time allocation trade-offs when solving typical problems economists face (e.g. numerical integration, likelihood maximization, bootstrap standard errors). The course is entirely practical and based on our experience as researchers. This is not a theoretical course; for example, we do not derive convergence properties of numerical optimizers. Instead, the main goal is to provide economists with the essential computational toolkit to conduct high-level research efficiently and accurately.
 \end{abstract}
 
 
@@ -20,11 +20,16 @@
 
 \section{PB}
 
-\section{BJS}
+\section{Structural Econometrics 1: High-Dimensional Panel Data Estimators and Multiple Hypothesis Testing}
+\noindent \textbf{Instructor}: Bradley J. Setzler.\\
+\noindent \textbf{Time}: Two weeks.\\
+\noindent \textbf{Instruction Material}: Available on JuliaEconomics.com.\\
+\noindent \textbf{Description}: This section demonstrates the estimation of high-dimensional panel data models, including fixed effects and recursive Bayesian filters, through numerical maximum likelihood estimation. Recognizing the multiple testing problem induced by estimating hundreds of parameters simultaneously, we use cluster parallelization to perform non-parametric multiple testing corrections. Always, the aim is to write estimators in computer code that exactly imitate the natural syntax of economics, so that we could copy our \LaTeX\ code directly into a numerical program with minimal effort. Always, we use simulation of the assumed data generating process to verify that our code can retrieve the true parameter values. Instruction materials are available in Julia (primary), Python, and R.
 
-\section{Structural Econometrics with Implementations in Julia}
-\noindent \textbf{Host}: Jorge L. Garc\'{i}a.\\
-\noindent \textbf{Time}: two weeks.\\
+
+\section{Structural Econometrics 2: Dynamic Programming Estimators}
+\noindent \textbf{Instructor}: Jorge L. Garc\'{i}a.\\
+\noindent \textbf{Time}: Two weeks.\\
 \noindent \textbf{Description}:  Structural models in Economics will be described briefly. In addition, structural and non-structural estimation will be recognized as approaches that enable the user to answer different research questions. Also, parametric and non-parametric assumptions will be discussed as auxiliary means that contribute to recover parameters. This section of the course will build on \citet{keane2011structural} but will be expanded by providing a wide range of computational implementations of their baseline model – a classic discrete choice dynamic programming model of women's labor supply –. The program Julia will be used for these implementations and additional some Python spinets will be provided for the sake of comparison.
 
 \clearpage
