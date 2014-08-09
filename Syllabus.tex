@@ -19,18 +19,51 @@
 \noindent \textbf{Instruction Material}: Available on \href{http://johnerichumphries.com}{http://johnerichumphries.com}.\\
 \noindent \textbf{Description:} \noindent \textbf{Description:} this section provides a rapid introduction to the R environment for statistical computing. The objective of this part of the course is two part: (1) equip studets with the skills to use R as a statistical computing environment and (2) equip students with the skills to program in R so that they can implement their own models and methods. Practical skills covered include understanding R code, writing well documented R code, visualizing and summarizing data, writing functions, control flow, and calling optimizers -- no prior experience programming in R or other languages is required for this portion of the course. 
 
-\section{An Introduction to Rapid R for Economists}
+\section{Topics in computing using R}
 \noindent \textbf{Instructor}: Philip Barrett.\\
 \noindent \textbf{Time}: Two weeks.\\
 \noindent \textbf{Instruction Material}: \\
-\noindent \textbf{Description:} this section is about showing you how to speed up your R code.  We will very briefly discuss parallelism, but our focus will be on learning how to rewrite loops and linear algebra in C++.  These are often the most computationally intensive parts of a large project and can be pushed to C++ very easily and with substantial speed gains - improvements of 60 to 100 times faster are not uncommon.  We will use the \tt Rcpp \rm package to write C++ code that we can call from directly R, and the \tt RcppArmadillo \rm package to use very fast C++ linear algebra libraries with really easy syntax.
+\noindent \textbf{Description:} This section uses R as an example language to introduce students to various computing tools that can be used with many languages.  There are four topics covering two sessions.  Some of the content may be best interspersed with the preceding section part.  The topics and corresponding learning outcomes are:
+\begin{enumerate}
+  \item Version control with git
+	\begin{itemize}
+	  \item Using git to manage projects on a single computer.
+	  \item Using git to synchronize code across multiple computers.
+	  \item Git for collaborative projects
+	\end{itemize}
+	This section will start by using the gui in RStudio, but will transition to the command line for more sophisticated tasks.
+ 
+  \item Coding tools
+	\begin{itemize}
+	  \item Profiling: identifying bottlenecks in code
+	  \item Debugging: Basic debugger commands
+	  \item Unit testing: How to check your code for bugs
+	\end{itemize}
+ 
+  \item Integrating different languages
+	\begin{itemize}
+	  \item Basic C++
+	  \item Integrate C++ with R for speed
+	  \item Integrate Python with R (optional)
+	\end{itemize}
+ 
+  \item Parallel computing
+	\begin{itemize}
+	  \item Multi-core personal computing
+	  \item	Building an cluster on a server
+	  \item Submitting parallel jobs
+	  \item Task management and ordering in parallel computing
+	\end{itemize}
+ 
+\end{enumerate}
 
 
 \section{Advanced Econometrics in Julia: Quickly Estimate Any Model}
 \noindent \textbf{Instructor}: Bradley J. Setzler.\\
 \noindent \textbf{Time}: Two weeks.\\
 \noindent \textbf{Instruction Material}: Available on \href{JuliaEconomics.com}{JuliaEconomics.com}.\\
-\noindent \textbf{Description}: This section introduces students to the Julia programming language. Created in 2012, Julia aims to be the fastest among the user-friendly numerical programming languages. I demonstrate how to copy your theoretical equations from \LaTeX\ into Julia to achieve high-speed estimation without having to change the logic of your equations (Julia even permits \LaTeX\ symbols). Julia is a function-friendly language (economics is a function-based field of study), and you can run nested loops without worrying about speed, following the standard notation of economics ($\forall i, \forall t$, etc.). I show how to run Julia in the cluster with a single line of code, that is, you can run your code on 150 CPU's of the University server simultaneously after only a one-line command. I use very computationally intensive estimation routines (nonlinear recursive Bayesian filters, high-dimensional fixed effects, bootstrap step-down multiple hypothesis testing) to show that Julia can rapidly compute (almost) any challenge we can imagine as economists.
+\noindent \textbf{Description}: This section introduces students to the Julia programming language. Created in 2012, Julia aims to be the fastest among the user-friendly numerical programming languages. I demonstrate how to copy your theoretical equations from \LaTeX\ into Julia to achieve high-speed estimation without having to change the logic of your equations (Julia even permits \LaTeX\ symbols). Julia is a function-friendly language (economics is a function-based field of study), and you can run nested loops without worrying about speed, following the standard notation of economics ($\forall i, \forall t$, etc.). I show how to run Julia in the cluster with a single line of code, that is, you can run your code on 150 CPU's of the University server simultaneously after only a one-line command. I use very computationally intensive estimation routines (nonlinear recursive Bayesian filters, high-dimensional fixed effects, bootstrap step-down multiple hypothesis testing) to show that Julia can rapidly compute 
+(almost) any challenge we can imagine as economists.
 
 
 \section{Advanced Econometrics in Julia: Applied Structural Models}
